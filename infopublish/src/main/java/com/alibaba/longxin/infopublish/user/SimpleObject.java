@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package com.alibaba.longxin.infopublish.app1.module.action;
+package com.alibaba.longxin.infopublish.user;
 
-import com.alibaba.citrus.turbine.Navigator;
-import com.alibaba.citrus.turbine.dataresolver.FormGroup;
+public class SimpleObject {
+    private String name;
 
-import com.alibaba.longxin.infopublish.app1.SimpleObject;
+    public String getName() {
+        return name;
+    }
 
-public class SimpleAction {
-    public void doGreeting(@FormGroup("simple") SimpleObject simple, Navigator nav) {
-        String name = simple.getName();
-        nav.redirectTo("app1Link").withTarget("hello").withParameter("name", name);
+    public void setName(String name) {
+        this.name = name;
     }
 }

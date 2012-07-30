@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.alibaba.longxin.infopublish.app1.module.screen;
+package com.alibaba.longxin.infopublish.user.module.screen;
 
 import com.alibaba.citrus.turbine.Context;
 import com.alibaba.citrus.turbine.dataresolver.Param;
